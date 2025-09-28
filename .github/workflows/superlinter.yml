@@ -1,11 +1,14 @@
----
 name: Run Super Linter
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
+
+permissions:
+  contents: read
+  statuses: write
 
 jobs:
   lint:
